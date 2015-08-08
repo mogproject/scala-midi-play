@@ -16,7 +16,7 @@ def sendMessage(event: Int, channel: Int, data1: Int, data2: Int): Unit = {
 
 
 def noteOn(key: Int, duration: Long): Unit = {
-  sendMessage(NOTE_ON, 0, key, 93)
+  sendMessage(NOTE_ON, 0, key, 70)
   Thread.sleep(duration)
   sendMessage(NOTE_OFF, 0, key, 0)
 }
@@ -24,18 +24,18 @@ def noteOn(key: Int, duration: Long): Unit = {
 
 def f(x: Int): Unit = {
   println(s"${x}: start")
-  noteOn(48 + x, 300L * (random.nextInt(8) + 1))
+  noteOn(48 + x, 240L * (random.nextInt(8) + 1))
   println(s"${x}: end")
 }
 
 // Change the program to string ensamble.
 sendMessage(PROGRAM_CHANGE, 0, 49, 0)
 
-println("### (21 to 30).foreach(f)")
-(21 to 30).foreach(f)
+println("### (12 to 24).foreach(f)")
+(12 to 24).foreach(f)
 Thread.sleep(2000L)
 
-println("### (1 to 30).par.foreach(f)")
-(1 to 30).par.foreach(f)
+println("### (0 to 36).par.foreach(f)")
+(0 to 36).par.foreach(f)
 Thread.sleep(2000L)
 
