@@ -18,19 +18,21 @@ def noteOn(key: Int, duration: Long) = {
 }
 
 val bpm = 66
-val sq = 60L * 1000 / bpm / 4 // semiquaver duration in milli second
+val sq = 60L * 1000 / bpm / 4 // 16th note (semiquaver) duration in milli second
 
-println("4")
+print("\r4")
 Thread.sleep(4 * sq)
-println("3")
+print("\r3")
 Thread.sleep(4 * sq)
-println("2")
+print("\r2")
 Thread.sleep(4 * sq)
-println("1")
+print("\r1")
 Thread.sleep(4 * sq)
+print("\r ")
 
-println("")
 Thread.sleep(2 * sq)
+print("\r")
+
 print("冷")
 noteOn(67, sq)
 print("や")
