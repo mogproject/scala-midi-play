@@ -22,7 +22,7 @@ msg.setMessage(NOTE_ON, 0, 60, 93)
 rcvr.send(msg, -1)
 ```
 
-### 2. Play the music using only Java Sound API and `Thread.sleep`
+### 2. Play music just using `NOTE_ON` and `Thread.sleep`
 
 ```
 $ ./scripts/hello_midi.scala
