@@ -5,13 +5,13 @@ import javax.sound.midi.ShortMessage._
 
 val rcvr = MidiSystem.getReceiver()
 
-def noteOn(key: Int, duration: Long) = {
+def noteOn(key: Int, gateTime: Long) = {
   val msg = new ShortMessage
 
   msg.setMessage(NOTE_ON, 0, key, 93)
   rcvr.send(msg, -1)
 
-  Thread.sleep(duration)
+  Thread.sleep(gateTime)
 
   msg.setMessage(NOTE_OFF, 0, key, 0)
   rcvr.send(msg, -1)

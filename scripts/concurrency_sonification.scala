@@ -15,9 +15,9 @@ def sendMessage(event: Int, channel: Int, data1: Int, data2: Int): Unit = {
 }
 
 
-def noteOn(key: Int, duration: Long): Unit = {
+def noteOn(key: Int, gateTime: Long): Unit = {
   sendMessage(NOTE_ON, 0, key, 70)
-  Thread.sleep(duration)
+  Thread.sleep(gateTime)
   sendMessage(NOTE_OFF, 0, key, 0)
 }
 

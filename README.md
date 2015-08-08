@@ -40,7 +40,7 @@ Since the `Acoustic Piano` decays too fast, this script uses `String Ensemble 1`
 
 todo
 
-### 5. Write code with MIDI device
+### 5. Write code by MIDI device
 
 todo
 
