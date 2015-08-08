@@ -17,8 +17,8 @@ import javax.sound.midi.ShortMessage._
 val rcvr = MidiSystem.getReceiver()
 
 val msg = new ShortMessage
-
 msg.setMessage(NOTE_ON, 0, 60, 93)
+
 rcvr.send(msg, -1)
 ```
 
