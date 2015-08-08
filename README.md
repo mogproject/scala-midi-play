@@ -34,6 +34,8 @@ $ ./scripts/hello_midi.scala
 $ ./scripts/concurrency_sonification.scala
 ```
 
+Since the `Acoustic Piano` decays too fast, this script uses `String Ensemble 1` program.
+
 ## References
 
 - [scala-midi - Scala API over javax.sound.midi - Google Project Hosting](https://code.google.com/p/scala-midi/) 
