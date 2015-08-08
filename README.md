@@ -36,6 +36,14 @@ $ ./scripts/concurrency_sonification.scala
 
 Since the `Acoustic Piano` decays too fast, this script uses `String Ensemble 1` program.
 
+### 4. Read events from MIDI device
+
+todo
+
+### 5. Write code with MIDI device
+
+todo
+
 ## References
 
 - [scala-midi - Scala API over javax.sound.midi - Google Project Hosting](https://code.google.com/p/scala-midi/) 
