@@ -28,6 +28,12 @@ rcvr.send(msg, -1)
 $ ./scripts/hello_midi.scala
 ```
 
+### 3. ~~Visualize~~ Sonificate your concurrency
+
+```
+$ ./scripts/concurrency_sonification.scala
+```
+
 ## References
 
 - [scala-midi - Scala API over javax.sound.midi - Google Project Hosting](https://code.google.com/p/scala-midi/) 
