@@ -22,7 +22,7 @@ msg.setMessage(NOTE_ON, 0, 60, 93)
 rcvr.send(msg, -1)
 ```
 
-- If you want to use non-default output device, see Appendix A.
+- If you want to use non-default output device, see [Appendix A](https://github.com/mogproject/scala-midi-play#a-specify-the-output-device) below.
 
 
 ### 2. Play music just using `NOTE_ON` and `Thread.sleep`
