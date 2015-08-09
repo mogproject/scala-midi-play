@@ -69,7 +69,7 @@ import javax.sound.midi.ShortMessage._
 
 val devices = MidiSystem.getMidiDeviceInfo().map(MidiSystem.getMidiDevice)
 
-// Print and choose one device you want to use.
+// Print and choose one device which you want to use.
 devices.zipWithIndex.foreach { case (d, i) => println(s"${i} ${d.getDeviceInfo} (${d.getClass.getSimpleName})") }
 
 val dev = devices(0)
