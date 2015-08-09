@@ -3,7 +3,16 @@
 import javax.sound.midi._
 import javax.sound.midi.ShortMessage._
 
-val rcvr = MidiSystem.getReceiver()
+// Use Gervill synthesizer
+val info = MidiSystem.getMidiDeviceInfo().filter(_.getName == "Gervill").headOption
+val device = info.map(MidiSystem.getMidiDevice).getOrElse {
+   println("[ERROR] Could not find Gervill synthesizer.")
+   sys.exit(1)
+}
+
+// Setup output device
+device.open()
+val rcvr = device.getReceiver()
 
 def noteOn(key: Int, gateTime: Long) = {
   val msg = new ShortMessage
@@ -60,4 +69,5 @@ print("た")
 noteOn(62, 14 * sq)
 
 println("\n\n(c) AMEMIYA")
+device.close()
 
