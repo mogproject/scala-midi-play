@@ -44,6 +44,7 @@ def f(x: Int): Unit = {
 // Change the program to string ensamble.
 sendMessage(PROGRAM_CHANGE, 0, 49, 0)
 
+println("音階を1音ずつランダムな長さで鳴らします")
 println("### (7 to 14).foreach(f)")
 (7 to 14).foreach(f)
 Thread.sleep(2000L)

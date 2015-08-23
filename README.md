@@ -49,7 +49,9 @@ $ ./scripts/play_back.scala
 
 ### 5. Write Scala code by MIDI device
 
-todo
+```
+$ ./scripts/midi_typer.scala
+```
 
 ## References
 
