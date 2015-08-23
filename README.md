@@ -87,3 +87,18 @@ rcvr.send(msg, -1)
 dev.close()
 ```
 
+### B. Saving jar files
+
+If you want to save jar files to save time, try the following command.
+
+```
+$ cd scripts
+$ scala -save xxxxx.scala
+```
+
+Then, execute the jar file.
+
+```
+$ scala xxxxx.jar
+```
+
