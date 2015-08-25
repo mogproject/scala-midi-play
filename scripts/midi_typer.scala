@@ -46,11 +46,11 @@ class MidiInputReceiver(rcvr: Receiver) extends Receiver {
         case (NOTE_OFF, 48) => pressKeyShift(VK_0); pressKey(VK_ENTER)  // )\n 
         case (NOTE_ON, 91) => pressKey(VK_S, VK_C, VK_A, VK_L, VK_A, VK_ENTER)  // scala\n
         case (NOTE_ON, 67) => pressKeyShift(VK_QUOTE)  // "
-        case (NOTE_ON, 74) => pressKey(VK_D)  // d
+        case (NOTE_ON, 71) => pressKey(VK_D)  // d
         case (NOTE_ON, 76) => pressKey(VK_H)  // h
         case (NOTE_ON, 77) => pressKey(VK_E)  // e
+        case (NOTE_ON, 78) => pressKey(VK_R)  // r
         case (NOTE_ON, 79) => pressKey(VK_L)  // l
-        case (NOTE_ON, 81) => pressKey(VK_R)  // r
         case (NOTE_ON, 83) => pressKey(VK_SPACE)  // ' '
         case (NOTE_ON, 84) => pressKey(VK_O)  // o
         case (NOTE_ON, 86) => pressKey(VK_W)  // w
